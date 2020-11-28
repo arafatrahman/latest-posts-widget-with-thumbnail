@@ -1,0 +1,1 @@
+# latest-posts-widget-with-thumbnail
