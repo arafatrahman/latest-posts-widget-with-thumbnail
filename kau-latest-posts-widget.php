@@ -24,4 +24,4 @@ add_action('widgets_init', 'Kau_latest_posts_widgets');
 function Kau_latest_posts_widgets() {
     register_widget('Kau_latest_posts_widget');
 }
-
+include_once KLPW_PATH . "/classes/recent-post-widget-with-thumbnail.php";
