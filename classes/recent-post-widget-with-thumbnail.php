@@ -17,6 +17,7 @@ if (!class_exists('Kau_latest_posts_widget')) {
                 'description' => esc_html__('latest Posts Widget with Thumbnail.'),
             );
             parent::__construct('kau-latest-post', esc_html__('Kau Latest Posts With Thumbnail'), $getOption);
+            add_action('wp_enqueue_scripts', array($this, 'kau_latest_post_widget_styles'));
         }
         
         public function widget($arguments, $ins) {
@@ -98,6 +99,9 @@ if (!class_exists('Kau_latest_posts_widget')) {
             <?php
         }
         
+        public function kau_latest_post_widget_styles() {
+            wp_enqueue_style('kau-latest-posts-style', KLPW_ASSETS_DIR_URI . '/css/kau-latest-posts-style.css');
+        }
         
     }
 }

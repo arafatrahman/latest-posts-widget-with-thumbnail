@@ -1,0 +1,29 @@
+.kau-widget-entry-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: normal;
+    
+}
+.kau-widget-entry-title a{
+    text-decoration: none;
+}
+.kau-latest-posts{
+    margin-top: 20px;  
+    border-bottom: 1px solid #ebebeb;
+    overflow: hidden;
+}
+
+.kau-widget-post-thumbnail {
+    padding-right: 10px;
+    float: left!important;
+    
+}
+
+.kau-widget-post-details {
+    vertical-align: top;
+    display: table-cell;
+}
+.kau-widget-entry-meta{
+    color: #888;
+    font-size: 85%;
+}
