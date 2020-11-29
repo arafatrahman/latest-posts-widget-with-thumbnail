@@ -53,10 +53,14 @@ if (!class_exists('Kau_latest_posts_widget')) {
                                 </div>
                             <?php } ?>
                             <div class="kau-widget-post-details">
-                                <h3 class="kau-widget-entry-title"><a href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-                                <div class="kau-widget-entry-meta"><time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time></div>
+                                <h3 class="kau-widget-entry-title"><a href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark"><?php the_title(); ?> </a></h3>
+                                <?php $category = get_the_category();
+                                $link = get_category_link( $category[0]->term_id );
+                                
+                                ?>
+                                <div class="kau-widget-entry-meta"><a href="<?php echo $link; ?>"> <?php echo $category[0]->cat_name ?>  </a><time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished"><?php echo '( ' . get_the_date() . ' )'; ?></time></div>
                             </div>
-                        </div><!-- .bms-post -->
+                        </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
@@ -102,6 +106,7 @@ if (!class_exists('Kau_latest_posts_widget')) {
         public function kau_latest_post_widget_styles() {
             wp_enqueue_style('kau-latest-posts-style', KLPW_ASSETS_DIR_URI . '/css/kau-latest-posts-style.css');
         }
+        
         
     }
 }
