@@ -19,4 +19,9 @@ add_action('after_setup_theme', 'Latest_posts_widget_thumbnail');
 function Latest_posts_widget_thumbnail() {
     add_image_size('kau-widget-post-thumb', 65, 65, true);
 }
+add_action('widgets_init', 'Kau_latest_posts_widgets');
+
+function Kau_latest_posts_widgets() {
+    register_widget('Kau_latest_posts_widget');
+}
 
