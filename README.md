@@ -16,7 +16,7 @@ Show most wp recent Posts with thumbnail of your sites.Using our plugin you can 
 footer one ,footer two etc).You do not have to do any kind of coding for showing recent posts with thumbnail .However, if you have any problems with the installation or use of the plugin, you can contact us without any hesitation.
 Support Email arafatrahmank@gmail.com
 Give us feedback, suggestions, bug reports, and any other contributions on the in
-the plugin's [GitHub repository](https://github.com/arafatrahman/latest-posts-widget-with-thumbnail).
+the plugin's [GitHub repository](https://github.com/arafatrahman/wp-latest-posts-widget-with-thumbnail).
 WP Latest Posts Widget With Thumbnails plugin does not collect any personal data, so it is 
 **ready for EU General Data Protection Regulation (GDPR) compliance**.
 
