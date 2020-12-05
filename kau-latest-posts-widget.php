@@ -1,12 +1,15 @@
 <?php
 
 /**
- * Plugin Name:  Latest Posts Widget With Thumbnail
- * Description:  This is the plugin that output most recent Posts with thumbnail of your wordpress websites
- * Version:      0.0.1
+ * Plugin Name:  WP Latest Posts Widget With Thumbnails
+ * Description:  Show most wp recent Posts with thumbnail of your sites
+ * Version:      1.0.0
  * Author:       Arafat Rahman
  * Author URI:   http://kauniaweb.com/
+ * Text Domain:  wp-latest-posts-widget-with-thumbnails
+ * Domain Path: /languages
  */
+
 // Exit if accessed directly
 if (!defined('ABSPATH'))
     exit;

@@ -5,7 +5,7 @@ if (!class_exists('Kau_latest_posts_widget')) {
         
         private function defaults() {
             $byDefaults = array(
-                'title' => esc_html__('Recent Posts'),
+                'title' => esc_html__('Recent Posts','wp-latest-posts-widget-with-thumbnails'),
                 'post-number' => 5,
             );
             return $byDefaults;
@@ -14,9 +14,9 @@ if (!class_exists('Kau_latest_posts_widget')) {
         public function __construct() {
             $getOption = array(
                 'classname' => 'kau-latest-post',
-                'description' => esc_html__('latest Posts Widget with Thumbnail.'),
+                'description' => esc_html__('latest Posts Widget with Thumbnail.','wp-latest-posts-widget-with-thumbnails'),
             );
-            parent::__construct('kau-latest-post', esc_html__('Kau Latest Posts With Thumbnail'), $getOption);
+            parent::__construct('kau-latest-post', esc_html__('WP Latest Posts With Thumbnail','wp-latest-posts-widget-with-thumbnails'), $getOption);
             add_action('init', array($this, 'kau_latest_post_widget_styles'));
         }
         
@@ -87,14 +87,14 @@ if (!class_exists('Kau_latest_posts_widget')) {
             ?>
             <p>
                 <label
-                    for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php esc_html_e('Widget Title:'); ?></label>
+                    for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php esc_html_e('Widget Title:','wp-latest-posts-widget-with-thumbnails'); ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>"
                        name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text"
                        value="<?php echo esc_attr($ins['title']); ?>"/>
             </p>
             <p>
                 <label
-                    for="<?php echo esc_attr($this->get_field_id('post-number')); ?>"><?php esc_html_e('Number of Posts to Display:'); ?></label>
+                    for="<?php echo esc_attr($this->get_field_id('post-number')); ?>"><?php esc_html_e('Number of Posts to Display:','wp-latest-posts-widget-with-thumbnails'); ?></label>
                 <input class="widefat" id="<?php echo esc_attr($this->get_field_id('post-number')); ?>"
                        name="<?php echo esc_attr($this->get_field_name('post-number')); ?>" type="number"
                        value="<?php echo esc_attr($ins['post-number']); ?>"/>
