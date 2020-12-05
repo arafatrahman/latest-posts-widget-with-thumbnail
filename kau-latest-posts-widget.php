@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:  Latest Posts Widget With Thumbnail
- * Description:  This is the plugin that output most recent Posts with thumbnail of your wordpress websites .
+ * Description:  This is the plugin that output most recent Posts with thumbnail of your wordpress websites
  * Version:      0.0.1
  * Author:       Arafat Rahman
  * Author URI:   http://kauniaweb.com/
